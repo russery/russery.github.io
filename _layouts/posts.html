@@ -2,6 +2,8 @@
 layout: archive
 ---
 
+<p class="page__meta">Posted: {{ page.date | date: "%b %d, %Y" }}</p>
+
 {{ content }}
 
 <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>

@@ -1,0 +1,77 @@
+---
+layout: post
+title: CircuitStudio vs. Altium Designer
+date: 2015-11-02 22:57:33.000000000 -08:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- Altium
+- Circuit Studio
+- Electrical Engineering
+meta:
+  sharing_disabled: '1'
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _publicize_job_id: '16481212146'
+  _wpcom_is_markdown: '1'
+  _edit_last: '3794269'
+  geo_public: '0'
+author:
+  login: uavbob
+  email: robert@gtflyboy.com
+  display_name: Robert
+  first_name: ''
+  last_name: ''
+permalink: "/2015/11/02/circuitstudio-vs-altium-designer/"
+---
+<p><img class="alignleft wp-image-163 size-full" src="{{ site.baseurl }}/assets/logo.png" alt="logo" width="204" height="48" />I signed up for an Altium CircuitStudio trial in the interests of seeing if I can live with it instead of Altium Designer for personal projects. I've been using Altium Designer (AD) at work for a number of years now and love its ease of use, simple workflows, and extremely good schematic-PCB integration.</p>
+<p>A little background - Altium now offers three tiers of their eCAD software:</p>
+<ul>
+<li>Altium Designer - this is their flagship product, targetted at professional users, and runs around $5-10k per license.</li>
+<li>Circuit Studio - this is targetted at professionals, and in theory is just a somewhat simplified Altium Designer, and is about half the cost of AD.</li>
+<li>Circuit Maker - this is their bottom-end software oriented to the burgeoning Maker community. It is even simpler than Circuit Studio, and has a free version that automatically open-sources your designs unless you pay to keep them private.</li>
+</ul>
+<p><!--more--></p>
+<p>I'm interested in migrating down the tool hierarchy to Circuit Studio or Circuit Maker for my personal projects, where I don't want to use my company's Altium Designer license, but I can't afford to shell out several kilobucks to get my own license. I've been trying out Circuit Studio for a <a href="https://github.com/russery/can_bridge" target="_blank">CAN-Bus bridge project</a> I'm working on in my spare time, and decided to write up my gripes about it here on the blog.</p>
+<p>Here are a few other reviews I found useful and interesting:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=CvMfb95YBgc" target="_blank">Fedevel's Review</a> - FedEvel (Robert Feranec) is a legend in Altium tutorials, and he has a lot of the same gripes as I do</li>
+<li><a href="https://www.youtube.com/watch?v=TWcL0OF_eQI" target="_blank">EEVBlog Review</a> - Dave Jones put together a typically bombastic review as well, although he's looking at Circuit Maker, not Circuit Studio. However, it looks like it has a lot of the same problems as Circuit Studio.</li>
+</ul>
+<h2>Why did they change the keyboard shortcuts?</h2>
+<p>One of the things I totally take for granted using Altium Designer is the convenience afforded by built-in keyboard shortcuts for doing everything from zooming around the document to drawing wires, placing parts, changing alignment, etc. For instance, to place a Generic No-ERC directive, I just type hit the P-V-N keys in that order (<strong>P</strong>lace - Directi<strong>v</strong>e - Generic <strong>N</strong>o ERC). As I do this, the following menus appear at my cursor, showing me what I'm doing:<br />
+<a href="https://uavbob.files.wordpress.com/2015/11/screen-shot-2015-11-02-at-6-53-04-pm.png"><img class="wp-image-151 size-medium aligncenter" src="{{ site.baseurl }}/assets/screen-shot-2015-11-02-at-6-53-04-pm.png?w=162" alt="Altium Designer Shortcut Menu" width="162" height="300" /></a></p>
+<p>Now in CS, they didn't completely remove the keyboard shortcuts, they just changed and disabled enough of them to make it extremely difficult to transition from AD to CS. For instance, hitting the <strong>P</strong> key no longer brings up the "Place" menu, but rather takes you to the <strong>P</strong>roject menu. To place a component, you have to hit <strong>H</strong> for <strong>H</strong>ome and then a cryptic number for what you want to place. There's not even a way to place a wire without opening the Home menu and clicking the "Wire" button (whereas in AD, I can just hit <strong>P</strong>-<strong>W</strong> and start routing my wire).</p>
+<p><a href="https://uavbob.files.wordpress.com/2015/11/screen-shot-2015-11-02-at-6-51-36-pm.png"><img class="wp-image-152 size-medium aligncenter" src="{{ site.baseurl }}/assets/screen-shot-2015-11-02-at-6-51-36-pm.png?w=300" alt="CircuitStudio Shortcuts" width="300" height="62" /></a></p>
+<p>Among the most essential things I can no longer do via shortcut keys:</p>
+<ul>
+<li>Place a wire in schematics (<strong>P</strong> - <strong>W</strong> in AD)</li>
+<li>Zoom to an area (<strong>V</strong> - <strong>A</strong> in AD)</li>
+<li>Change the grid size in PCB editor, although this still works in their schematic editor (<strong>G</strong> in AD)</li>
+<li>Align components (<strong>A</strong> in AD)</li>
+<li>Flip the board in 3D view in PCB editor (<strong>V</strong> - <strong>B</strong> in AD)</li>
+</ul>
+<p>I'm sure there are a ton others, but these are the ones that have driven me crazy in my couple of hours of playing with CircuitStudio.</p>
+<h2>Why can't I import supplier parameters to a part?</h2>
+<p>Whereas the keyboard shortcuts issue is an inconvenience, this problem makes CircuitStudio almost unusable for me. In AD, I can use Supplier Search to locate the part I want to create in my schematic library and then right-click on the part and . I use this workflow in AD whether I'm working with standalone .SchLib, an integrated .IntLib, or an .SVNDbLib library.<br />
+<img class="size-medium wp-image-153 aligncenter" src="{{ site.baseurl }}/assets/screen-shot-2015-11-02-at-7-13-26-pm.png?w=300" alt="AD import part into library" width="300" height="146" /></p>
+<p>In CS, the best I can do is to add a supplier link to an existing part by right-clicking on the component in my schematic library, and then manually add in all of the parameters.</p>
+<p><a href="https://uavbob.files.wordpress.com/2015/11/screen-shot-2015-11-02-at-7-16-29-pm.png"><img class="wp-image-154 aligncenter" src="{{ site.baseurl }}/assets/screen-shot-2015-11-02-at-7-16-29-pm.png" alt="CS add supplier link" width="137" height="185" /></a></p>
+<p>This is extremely frustrating and time consuming. I think they did this to drive more people to use the Altium-curated CircuitStudio vault, but for anyone who needs to create custom parts with supplier parameters, this is crippling. If you can find all of your parts in their vault, this isn't a show-stopper, but god forbid you have to create a part not in their vault - it'll take you many minutes of frustrating and error prone manual parameter entry.</p>
+<h2>They removed the awesome shortcut buttons in the lower right</h2>
+<p>This little group of buttons that appears at the lower-right of the screen in Altium Designer is my best friend:</p>
+<p><a href="https://uavbob.files.wordpress.com/2015/11/screen-shot-2015-11-02-at-7-19-20-pm.png"><img class="size-medium wp-image-155 aligncenter" src="{{ site.baseurl }}/assets/screen-shot-2015-11-02-at-7-19-20-pm.png?w=300" alt="AD shortcut buttons" width="300" height="59" /></a></p>
+<p>It allows you to change the view masks, clear any existing masks, change snap options, launch various system panes and a dozen other useful things. Here it is in CircuitStudio:</p>
+<p><a href="https://uavbob.files.wordpress.com/2015/11/screen-shot-2015-11-02-at-7-26-12-pm.png"><img class="size-full wp-image-156 aligncenter" src="{{ site.baseurl }}/assets/screen-shot-2015-11-02-at-7-26-12-pm.png" alt="CS shortcut buttons" width="250" height="60" /></a></p>
+<p>That's right, it doesn't exist anymore. ARRRG! Why, Altium, why?? In order to clear a selection or mask now, I have to navigate to the View Menu and find the Clear button way over on the right side. They didn't even give it a keyboard shortcut, which would have made this somewhat tolerable!</p>
+<p><a href="https://uavbob.files.wordpress.com/2015/11/screen-shot-2015-11-02-at-7-18-54-pm.png"><img class="wp-image-157 size-large aligncenter" src="{{ site.baseurl }}/assets/screen-shot-2015-11-02-at-7-18-54-pm.png?w=660" alt="CS Clear button location" width="660" height="65" /></a></p>
+<h2>Final Thoughts</h2>
+<p>All of these things might seem minor, but for someone looking to migrate from Altium Designer to CircuitStudio for personal / side-gig use, this makes it a total non-starter. I can think of a couple reasons Altium might want to do this:</p>
+<ol>
+<li>They're trying to prevent exactly this migration. They want anyone who's used to using Altium Designer to keep using it, and not be able to move downstream to CircuitStudio. I would have hoped they would just remove some of AD's features that are most useful to a professional like SVNDbLib libraries, advanced PCB routing options, flexible layer stack management, etc. while leaving the interface and user experience alone. This would allow users to more fluidly switch between the two products according to their needs and ability to afford the more advanced package.</li>
+<li>They are suffering from a really bad case of <a href="http://i.imgur.com/5IflcaW.png" target="_blank">cranial-rectal inversion</a>. My fear is that they're prototyping new interfaces and workflows for Altium Designer with CircuitStudio, and that this is just the first place we're seeing some of these problems pop up. I'm not sure how much code is shared between the Altium Designer and CircuitStudio products, but hopefully we won't ever see these problems migrated to Altium Designer.</li>
+</ol>

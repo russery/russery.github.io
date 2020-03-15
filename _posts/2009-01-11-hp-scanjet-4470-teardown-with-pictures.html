@@ -1,0 +1,117 @@
+---
+layout: post
+title: HP Scanjet 4470 Teardown with Pictures
+date: 2009-01-11 00:23:50.000000000 -08:00
+type: post
+parent_id: '0'
+tags:
+- Electrical Engineering
+- scanner
+- teardown
+- tech guide
+---
+
+<p>I'm in the process of cleaning out my room in preparation for my move to California at the end of this semester, so I decided to dig into my box of old electronic crap that I've been hauling around for a few years. In doing so, I ran across my trusty old Hewlett Packard Scanjet 4470 scanner that I've had since middle school. It hasn't worked for a couple of years due to a bum power supply, but I managed to scrounge up another 12 volt supply and turn it on. It turns out that all these years of hauling it around have caught up with it, and it doesn't scan very well anymore. I tried several scans with it, and they all came out with rainbow lines across them: </p>
+
+<p><img title="Scan of an IEEE publication I had laying around" src="{{ site.baseurl }}/assets/3186140945_6d4314d3c9_o.jpg" alt="Scan of an IEEE publication I had laying around" width="318" height="212" /></p>
+
+<p>After reading a few forum posts, I came to the conclusion that the CFL tube used to front-light the media being scanned is on the fritz. Couple this with the fact that HP doesn't have any drivers that will work with Leopard, and I decided it was time to retire the old scanner to the dumpster. Being a EE, I couldn't resist tearing it apart first to see its guts, so I thought I'd share the results of that with you, and thus begins...<!--more--></p>
+<h2>The Teardown:</h2>
+
+<p>The scanner is opened by removing two screws on the front, and opening the case like a giant clamshell:</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3376/3186122587_263a76b1cb_o.jpg"><img title="Scanner" src="{{ site.baseurl }}/assets/3186122587_50ca145737_m.jpg" alt="Scanner prior to teardown" width="240" height="180" /></a>
+</p>
+<div class="mceTemp"></div>
+
+<p>
+<a href="http://farm4.static.flickr.com/3406/3186964504_89e9c7677e_o.jpg"><img title="Scanner Open" src="{{ site.baseurl }}/assets/3186964504_80a120e9a2_m.jpg" alt="After opening the case" width="240" height="180" /></a>
+</p>
+
+<p>On the inside, you can now see the image sensor carriage, the belt drive that moves it, the main PCB, the ribbon cables connecting the carriage and front panel, and at the far right the PCB that holds the switches and LCD for the front panel. I was somewhat surprised to find that the sensor carriage rides on a single rail, with the opposite side of the carriage riding on a wheel which goes down an open track. I guess the bushings that ride on the rail are stiff enough to prevent any torsion of the carriage in the plane of the scanner, and rotation of the carriage out of the plane is prevented just by gravity. I guess HP saved a few bucks by building it with only one rail.</p>
+
+<p>Here is a closeup of the PCB that holds all the user interface switches and the LCD:</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3514/3186965478_78d2b4176d_o.jpg"><img title="Front PCB" src="{{ site.baseurl }}/assets/3186965478_bc39a09f95_m.jpg" alt="Front PCB" width="240" height="180" /></a>
+</p>
+
+<p>The LCD is sitting on a little rubber "table" that cushions it and keeps it pressed against the viewing window. Following is a closeup of the main PCB. There's not really much to it... a stepper motor driver chip, an HP Scanner ASIC, what apears to be a RAM buffer, and a whole mess of discretes. Simple, but then again I guess most of the heavy lifting is done by the PC software.</p>
+
+
+<a href="http://farm4.static.flickr.com/3404/3186124593_30b0685779_o.jpg"><img title="scanner pcb" src="{{ site.baseurl }}/assets/3186124593_801ae70a74_m.jpg" alt="Main PCB" width="240" height="180" /></a>
+</p>
+
+<p>Removing the sensor carriage was very simple, as it wasn't even bolted in. Removal consisted of slipping the drive belt off the far pulley</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3484/3186966418_da4d58b08f_o.jpg"><img title="Belt removal" src="{{ site.baseurl }}/assets/3186966418_a7c652b006_m.jpg" alt="Removing the drive belt" width="240" height="180" /><br />
+</a>
+</p>
+
+<p>... followed by simply lifting out the carriage rail</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3336/3186125495_3c4bd45c25_o.jpg"><img title="carriage rail" src="{{ site.baseurl }}/assets/3186125495_391131a7ab_m.jpg" alt="Lifting out the carriage rail" width="240" height="180" /></a>
+</p>
+
+<p>Inside the sensor carriage, we find all kinds of optical goodies, including front surface mirrors, a lens, and the CCD sensor itself. The mirrors were just held on with little metal clips which could be popped off with a flathead screwdriver:</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3499/3186967782_f8ce160f41_o.jpg"><img title="mirror" src="{{ site.baseurl }}/assets/3186967782_d163b13acf_m.jpg" alt="Removing the mirrors" width="240" height="180" /></a>
+</p>
+
+<p>After popping out the three mirrors, I removed the sensor PCB which carries the image sensor itself, a bunch of discretes, and an photointerrupter (the black tallish doo-dad) to let the carriage know when it has reached its home position:</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3095/3186126883_039ab3c3a7_o.jpg"><img title="Sensor PCB" src="{{ site.baseurl }}/assets/3186126883_a0eb15f7a1_m.jpg" alt="The back of the sensor PCB" width="240" height="180" /></a>
+</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3534/3186971070_45140fa835_o.jpg"><img title="Photointerrupter" src="{{ site.baseurl }}/assets/3186971070_4c4639e077_m.jpg" alt="Closeup of the photointerrupter" width="180" height="240" /></a>
+</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3085/3186968856_61b7937a32_o.jpg"><img title="CCD sensor" src="{{ site.baseurl }}/assets/3186968856_8b758ecb43_m.jpg" alt="The CCD Sensor" width="240" height="180" /></a>
+</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3428/3186129173_8f6dd9b927_o.jpg"><img title="CCD closeup" src="{{ site.baseurl }}/assets/3186129173_432651e876_m.jpg" alt="And a closeup view" width="240" height="180" /></a>
+</p>
+
+<p>Inspecting the CCD closely, it appears that it is only three pixels tall or so, with a line of pixels for red, green, and blue. Here is a view of where the sensor PCB mounts, looking down into the lens that focuses the scanned image onto the CCD:</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3528/3186128069_5f28deb135_o.jpg"><img title="CCD lens" src="{{ site.baseurl }}/assets/3186128069_7aede80d00_m.jpg" alt="CCD optics" width="240" height="180" /></a>
+</p>
+
+<p>That's about all there was to the image carriage. Next, I removed the drive motor. It was held in with a single screw, as shown below. I must say, HP made it really easy to pull this puppy apart.</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3499/3186128653_f99c98b36d_o.jpg"><img title="motor removal" src="{{ site.baseurl }}/assets/3186128653_6e7d359107_m.jpg" alt="Pulling the drive motor" width="240" height="180" /></a>
+</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3307/3186971918_5c7216220d_o.jpg"><img title="Geartrain" src="{{ site.baseurl }}/assets/3186971918_e879272c15_m.jpg" alt="Closeup of the motor and geartrain" width="240" height="180" /></a>
+</p>
+
+<p>Here are all the electronic goodies laid out more or less how they fit into the scanner:</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3113/3186131023_2a2c9c94a7_o.jpg"><img title="guts" src="{{ site.baseurl }}/assets/3186131023_25c486ac58_m.jpg" alt="All the insides" width="240" height="180" /></a>
+</p>
+
+<p>One thing I didn't get a picture of before was the CFL and its inverter, which can be seen wired up to the CCD circuit board. Also shown in this picture are all three of the mirrors that convey the scanned image to the CDD.</p>
+
+<p>This particular scanner model came with an attachment to backlight negatives and slides so they can be scanned. I didn't get any pictures of its teardown, but it was pretty simple on the inside, with just a CFL tube and inverter mounted into a reflector. I decided to see how bright the two CFLs (this one, and the one from the scanner itself) would be when wired up together:</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3347/3186131535_659301ab55_o.jpg"><img title="CFLs" src="{{ site.baseurl }}/assets/3186131535_cd62b9f154_m.jpg" alt="CFL tubes in the reflector" width="240" height="180" /></a>
+</p>
+
+<p>They weren't exactly blindingly bright, but certainly bright enough to do something with. The obvious application was a little CFL desk-lamp, which I hacked together with the 12V wall wart, the two CFL's and inverters, and the reflector. I added a little ribbon cable from the scanner around the edge to pretty it up, taped it under my desk, and called it a desk lamp. It lights up my inbox nicely... dubiously useful, but kind of neat in a geeky sort of way:</p>
+
+<p>
+<a href="http://farm4.static.flickr.com/3114/3186133027_5c77e9c90e_o.jpg"><img title="desklamp" src="{{ site.baseurl }}/assets/3186133027_0ec58c1e72_m.jpg" alt="CFL Desk Lamp... aint it pretty?" width="240" height="180" /></a>
+</p>

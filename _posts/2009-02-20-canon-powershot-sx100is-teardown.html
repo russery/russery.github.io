@@ -1,0 +1,72 @@
+---
+layout: post
+title: Canon Powershot SX100IS Teardown
+date: 2009-02-20 00:16:35.000000000 -08:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- Electrical Engineering
+- Powershot SX100IS
+- teardown
+- tech guide
+meta:
+  _edit_last: '3794269'
+  twitter_cards_summary_img_size: a:7:{i:0;i:240;i:1;i:180;i:2;i:2;i:3;s:24:"width="240"
+    height="180"";s:4:"bits";i:8;s:8:"channels";i:3;s:4:"mime";s:10:"image/jpeg";}
+author:
+  login: uavbob
+  email: robert@gtflyboy.com
+  display_name: Robert
+  first_name: ''
+  last_name: ''
+permalink: "/2009/02/20/canon-powershot-sx100is-teardown/"
+---
+<dl class="wp-caption alignleft">
+<dt class="wp-caption-dt"><a href="http://farm4.static.flickr.com/3617/3293591293_7ce3fff69d_o.jpg"><img title="before" src="{{ site.baseurl }}/assets/3293591293_1b3e584b53_m.jpg" alt="Before the teardown" width="240" height="180" /></a></dt>
+</dl>
+<p>I keep running across more and more stuff that is just begging to be torn apart. It's like I'm 5 years old all over again, except this time I have screwdrivers instead of just rocks and sticks. Anyway, this time around, I tore down my roommate's Canon Powershot SX100IS camera. It's been having some issues with a stuck shutter, so we tried to pull it apart and fix it. Following are the results of that attempt:</p>
+<p><!--more-->First off, there were about 10 or so screws to remove from the outside of the case. Some were hidden in the battery compartment, others underneath a little removable trim panel, others in the little port flap on the side. They're tricky to find, so don't start prying at the case until you're sure you've pulled all the screws.</p>
+<p>
+<a href="http://farm4.static.flickr.com/3448/3294414022_15ac73db34_o.jpg"><img title="screws" src="{{ site.baseurl }}/assets/3294414022_123d3a0d86_m.jpg" alt="Removing exterior screws" width="240" height="180" /></a>
+</p>
+<p>The SX100IS has a cool little memory backup battery that just slides into the side of the camera that can be seen above the pile of screws in the pic above.</p>
+<p>
+<a href="http://farm4.static.flickr.com/3454/3293590931_77148e697c_o.jpg"><img title="trim panel" src="{{ site.baseurl }}/assets/3293590931_f91650799b_m.jpg" alt="After removing the side trim" width="240" height="180" /></a>
+</p>
+<p>The camera has a little side trim piece that's hiding another couple of screws that hold the front and back of the camera on. Once those screws are removed, it's possible to pop the entire front of the camera off. First, though, you have to pop off the top of the camera, which should be loose at this point if you pulled all the other screws from the outside.</p>
+<p>
+<a href="http://farm4.static.flickr.com/3399/3294415862_3bd8e3a258_o.jpg"><img title="top comes off" src="{{ site.baseurl }}/assets/3294415862_e316d758ea_m.jpg" alt="Pulling off the top" width="180" height="240" /></a>
+</p>
+<p>After pulling the top off, you can remove the front plastic piece:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3347/3294415694_51a6136404_o.jpg"><img title="front" src="{{ site.baseurl }}/assets/3294415694_a2ec5cf77b_m.jpg" alt="Removing the front" width="240" height="180" /></a>
+</p>
+<p>Here's what the inside of the front of the camera looks like:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3430/3294415330_1798fc37b5_o.jpg"><img title="front again" src="{{ site.baseurl }}/assets/3294415330_bcf37a20d7_m.jpg" alt="Inside the front" width="180" height="240" /></a>
+</p>
+<p>You can see the flash board off to the side of the lens, and the lens motor on the other side. After the front is off, the back can be pulled in a similar manner, but watch out for the flex cable connecting the buttons on the back to the PCB.</p>
+<p>
+<a href="http://farm4.static.flickr.com/3449/3293591119_9e5a8c22d0_o.jpg"><img title="inside back" src="{{ site.baseurl }}/assets/3293591119_e20095a412_m.jpg" alt="Inside the back of the camera" width="240" height="180" /></a>
+</p>
+<p>In our quest to remove the lens assembly, I decided it was a good idea to pull the LCD and the pcb off of the back of the camera. The LCD has two connectors, one for the backlight, and one for the LCD data... make sure to disconnect both before pulling the LCD.</p>
+<p>
+<a href="http://farm4.static.flickr.com/3307/3294413838_1227f6acb8_o.jpg"><img title="lcd" src="{{ site.baseurl }}/assets/3294413838_226de14b2a_m.jpg" alt="Pulling the LCD" width="240" height="180" /></a>
+</p>
+<p>After removing the LCD and the PCB, it is possible to see the back of the CCD assembly:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3234/3293590651_75faea1cb6_o.jpg"><img title="ccd" src="{{ site.baseurl }}/assets/3293590651_9c06d2987a_m.jpg" alt="Back of the CCD" width="180" height="240" /></a>
+</p>
+<p>Next I yoinked off the flash driver board on the front of the camera to see if there was any way to get at the lens mechanism that way.</p>
+<p>
+<a href="http://farm4.static.flickr.com/3633/3294415512_8a4c19fbfa_o.jpg"><img title="flash" src="{{ site.baseurl }}/assets/3294415512_06395a0915_m.jpg" alt="Flash driver board" width="240" height="180" /></a>
+</p>
+<p>At this point, we came to the conclusion that we weren't getting anywhere trying to get at the shutter, so we decided it was time to put the camera back together. This was pretty straightforward, with the exception of plugging some of the flex cables back in. The trick here is that the sockets they plug into have little black parts at the front that flip down to clip the cable in place. One of these can be seen on the LCD cable below:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3314/3293590781_a385fb88fe_o.jpg"><img title="lcd cable" src="{{ site.baseurl }}/assets/3293590781_06934ef23b_m.jpg" alt="LCD cable insertion" width="180" height="240" /></a>
+</p>
+<p>Anyway, those are all the pictures I took. We managed to get the camera put back together with only two extra screws! It still powers up and everything works on it, but the shutter is still broken so the whole exercise was kind of pointless, except for the educational and entertainment value.</p>

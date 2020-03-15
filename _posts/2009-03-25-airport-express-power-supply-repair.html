@@ -1,0 +1,74 @@
+---
+layout: post
+title: Airport Express Power Supply Repair
+date: 2009-03-25 22:19:54.000000000 -07:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- airport express
+- hack
+- power supply
+- repair
+- teardown
+meta:
+  _edit_last: '3794269'
+  twitter_cards_summary_img_size: a:7:{i:0;i:240;i:1;i:180;i:2;i:2;i:3;s:24:"width="240"
+    height="180"";s:4:"bits";i:8;s:8:"channels";i:3;s:4:"mime";s:10:"image/jpeg";}
+  _oembed_4e9ba965350c65d3676285a6e01c4630: "{{unknown}}"
+  _oembed_6d034baff7e1d7fdbdaa8e8d3a2e3f72: "{{unknown}}"
+  _oembed_45c36f3f1cc4267bdb1ed6c6f3eda9a1: "{{unknown}}"
+  _oembed_ebd278b3414b57475e6747ccde39f717: "{{unknown}}"
+  _oembed_e7ae53f5747950a2a0cb6e78078ca6fc: "{{unknown}}"
+  _oembed_af37eadd8cca59b3ffc3d94d58454544: "{{unknown}}"
+  _oembed_da1388bf7422ffbb099a2e28d5480119: "{{unknown}}"
+  _oembed_756ed151c21b9f504f70b49128c0bed4: "{{unknown}}"
+  _oembed_c39bcf0ba901185fefd82a6cb4bf305f: "{{unknown}}"
+  _oembed_bf08c0a8f7c24f8962bb78621b1edb97: "{{unknown}}"
+  _oembed_71fb5a064a197a49ee4566c9a54bb636: "{{unknown}}"
+author:
+  login: uavbob
+  email: robert@gtflyboy.com
+  display_name: Robert
+  first_name: ''
+  last_name: ''
+permalink: "/2009/03/25/airport-express-power-supply-repair/"
+---
+<p><a href="http://uavbob.wordpress.com/?p=91"><img class="alignleft" title="before" src="{{ site.baseurl }}/assets/3386314146_26612daf9a_m.jpg" alt="" width="240" height="180" /></a>I bought an Apple Airport Express off Craigslist a couple months ago so I can send music to my living room stereo via Airtunes. The little bugger quit working about a month in though, so I tossed it in a drawer to be put on Ebay for scrap or otherwise dealt with. As is wont to happen this semester, however, one day recently I got bored and went hunting around my room for things to do. I ran across the Airport Express and started wondering what was wrong with it. Here's the story of the teardown and my attempts at repairing it:</p>
+<p><!--more--></p>
+<p>Apple, being Apple, decided to make it im-freaking-possible to get into the guts of the Airport Express. The case is two halves of thick plastic ultrasonically welded together, making it a serious pain in the ass to get it open. I tried prying it apart with a series of screwdrivers:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3627/3386315052_fd0b828973_b.jpg"><img title="prying" src="{{ site.baseurl }}/assets/3386315052_fd0b828973_m.jpg" alt="Attempting to pry it open" width="240" height="180" /></a>
+</p>
+<p>This was the wrong way to go about it. After a half hour of struggling with various sizes of screwdriver, I got impatient and grabbed my hand-saw. I carefully sawed around the three sides without the connectors. I tried to saw down the plastic until I was just starting to break through to the inside of the box, but this was pretty tricky in spots. Eventually I got impatient and went back to the screwdrivers:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3465/3386313820_36cf878ecb_b.jpg"><img title="prying" src="{{ site.baseurl }}/assets/3386313820_36cf878ecb_m.jpg" alt="Back to screwdrivers" width="240" height="180" /></a>
+</p>
+<p>After a good bit of prying and swearing, I managed to get the thing open. The Airport Express internals are split into two halves... a power board, and the airport-express-stuff board, with just a power cable connecting the two:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3555/3385501751_d426742622_b.jpg"><img title="Halved" src="{{ site.baseurl }}/assets/3385501751_d426742622_m.jpg" alt="Halved" width="240" height="180" /></a>
+</p>
+<p>Once the Airport Express is open, there are a few screws holding the Airport motherboard in place. I pulled those screws and then popped the metal shielding off of the board.</p>
+<p>
+<a href="http://farm4.static.flickr.com/3544/3385504019_a764145df8_b.jpg"><img title="Guts" src="{{ site.baseurl }}/assets/3385504019_a764145df8_m.jpg" alt="Airport motherboard" width="240" height="180" /></a>
+</p>
+<p>Here's what the two boards look like after yanking them from the plastic shells:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3589/3385502525_3755c63720_b.jpg"><img title="halved" src="{{ site.baseurl }}/assets/3385502525_3755c63720_m.jpg" alt="The boards" width="240" height="180" /></a>
+</p>
+<p>The motherboard is actually made out of two boards. The larger board holds all the RF and computing stuff, and the smaller daughterboard holds the audio interface circuit. Here's a pic of the two separated:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3570/3386315232_a059ce2b97_b.jpg"><img title="two boards" src="{{ site.baseurl }}/assets/3386315232_a059ce2b97_m.jpg" alt="Board and Daughterboard" width="240" height="180" /></a>
+</p>
+<p>Here's the back side of the motherboard:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3616/3386315846_6992a3f299_b.jpg"><img title="Backsies" src="{{ site.baseurl }}/assets/3386315846_6992a3f299_m.jpg" alt="Back of the motherboard" width="240" height="180" /></a>
+</p>
+<p>Next, I sat down to try to figure out what was wrong with the airport express. I tossed a volt-meter on the power supply outputs and plugged it in, and it turns out the power supply was shot. Neither the 5V or 3.3V outputs were pumping out any juice. I briefly considered trying to troubleshoot the supply, but I decided it was easier jut to chuck it  and throw some wall-warts on the inputs. I had a 3.3V wall-wart, but no 5V supply, so I used the 3.3V supply and a 12V supply running through a <a href="http://www.datasheetcatalog.com/datasheets_pdf/P/T/5/1/PT5101A.shtml" target="_blank">TI PT5101A</a> 5V, 1A switching power supply:</p>
+<p>
+<a href="http://farm4.static.flickr.com/3609/3386313254_0e902736cc_b.jpg"><img title="wart it up" src="{{ site.baseurl }}/assets/3386313254_0e902736cc_m.jpg" alt="Complete with warts" width="240" height="180" /></a>
+</p>
+<p>Unfortunately, the 3.3V and 12V wall warts I had sitting around were only 300mA and 500mA supplies, whereas the Airport Express's original power supply was spec'd at 1.21A and 0.7A for each voltage. I was hoping that the Airport wouldn't require that much power to operate, but it turns out that it does. When I plugged the power supplies in, the green LED briefly lit up and slowly faded out. I'm going to try to hunt down some more powerful supplies and try again.</p>

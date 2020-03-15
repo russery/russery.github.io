@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: archive
 title: About Me
 type: page
 permalink: "/about/"

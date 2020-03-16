@@ -1,7 +1,6 @@
 ---
-layout: archive
+layout: single
 title: Posts
-type: page
 permalink: "/posts/"
 ---
 

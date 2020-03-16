@@ -2,7 +2,9 @@
 layout: archive
 ---
 
+{% if page.date %}
 <p class="page__meta">Posted: {{ page.date | date: "%b %d, %Y" }}</p>
+{% endif %}
 
 {{ content }}
 

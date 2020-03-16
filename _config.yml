@@ -98,6 +98,7 @@ author:
   avatar           : assets/images/headshot.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Electrical Engineer on the move."
   location         : "San Francisco, California"
+  linkedin         : "robertussery"
   email            :
   links:
     - label: "Email"
@@ -106,9 +107,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/russery/"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: https://www.linkedin.com/in/robertussery/
 
 # Site Footer
 footer:
@@ -119,9 +117,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/russery/"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: https://www.linkedin.com/in/robertussery/
 
 # Reading Files
 include:

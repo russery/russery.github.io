@@ -43,6 +43,6 @@ Woohoo! It was a perfect fit. Here are a few more shots, with the #2 screws dril
 
 Here's the design if you'd like to use it for this camera:<br/>
 [camera_case.FCStd (1.1MB FreeCAD)](/assets/files/camera_case.FCStd)<br/>
-[camera_case.step (1.2MB Step file)](/assets/files/camera_case.Step)
+[camera_case.step (1.2MB Step file)](/assets/files/camera_case.step)
 
 Note that these files don't include the tripod threads and still have the M2 screw holes that weren't present in the final print.

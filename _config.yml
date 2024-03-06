@@ -43,7 +43,7 @@ comments:
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : "github-dark" # "github-light" (default), "github-dark"
-    issue_term           : "title" # "pathname" (default)
+    issue_term           : "pathname" # "pathname" (default)
     label                : "Comment"
   staticman:
     branch               : # "master"
@@ -259,3 +259,5 @@ defaults:
       share: true
       related: true
       show_date: true
+      excerpt_separator: <!--more-->
+      classes: wide

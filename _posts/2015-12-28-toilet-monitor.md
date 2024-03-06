@@ -1,9 +1,7 @@
 ---
-layout: posts
 title: Toilet Monitor Project
-date: 2015-12-28 00:00:00.000000000 -08:00
-type: post
-parent_id: '0'
+header:
+    teaser: /assets/images/old_posts/toilet_mon_hardware.jpg
 tags:
 - Electrical Engineering
 - hackery

@@ -1,9 +1,7 @@
 ---
-layout: posts
-title: Can Bus Bridge
-date: 2015-12-30 00:00:00.000000000 -08:00
-type: post
-parent_id: '0'
+title: CAN Bus Bridge
+header:
+    teaser: /assets/images/old_posts/can_bridge.jpeg
 tags:
 - Electrical Engineering
 - can bus

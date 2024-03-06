@@ -1,9 +1,7 @@
 ---
-layout: posts
 title: DIY Webcam Enclosure
-date: 2020-10-25 00:00:00.000000000 -08:00
-type: post
-parent_id: '0'
+header:
+    teaser: /assets/images/2020/enclosure_glamor_shot.jpg
 tags:
 - 3D Printing
 - webcam

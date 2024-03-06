@@ -12,7 +12,7 @@
 
 #theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "default", air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" # "default", air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -26,7 +26,7 @@ url                      : https://ussery.info # the base hostname & protocol fo
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : russery/russery.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/favicon/favicon-32x32.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -42,8 +42,9 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme                : "github-dark" # "github-light" (default), "github-dark"
+    issue_term           : "title" # "pathname" (default)
+    label                : "Comment"
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
@@ -86,10 +87,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : G-1Z453FCTFQ
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
@@ -97,7 +98,7 @@ author:
   name             : "Robert Ussery"
   avatar           : assets/images/headshot.jpg # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Electrical Engineer on the move."
-  location         : "San Francisco, California"
+  location         : "Boulder, Colorado"
   linkedin         : "robertussery"
   email            :
   links:
@@ -257,3 +258,4 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true

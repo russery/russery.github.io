@@ -213,7 +213,7 @@ figure {
   -webkit-box-align: start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 1em 0;
 
   img,
   iframe,
@@ -222,7 +222,9 @@ figure {
   }
 
   img {
-    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
     transition: $global-transition;

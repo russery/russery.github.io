@@ -10,7 +10,9 @@ tags:
 As with many folks over the last year, I've been working from home since the start of the COVID pandemic. I unfortunately didn't have a webcam back in March for the new world of Zoom meetings, so I hopped on Amazon to find one. Finding one that was in stock at that time and not outrageously expensive was more difficult than I had anticipated and I ended up buying a bare-board USB camera: [ELP 2.8-12mm Varifocal Lens Camera](https://www.amazon.com/gp/product/B00SPBWM0M/).
 
 This camera doesn't have an enclosure or any way to hold it in position. I ended up using some rubber bands to hold it to a miniature Joby tripod that I had hanging around:
-[![Camera and Tripod](/assets/images/2020/webcam_with_tripod.jpg){:width="50%"}](/assets/images/2020/webcam_with_tripod.jpg) [![Rubber Bands](/assets/images/2020/rubber_bands.jpg){:width="25%"}](/assets/images/2020/rubber_bands.jpg)
+
+[![Camera and Tripod](/assets/images/2020/webcam_with_tripod.jpg){:width="50%"}](/assets/images/2020/webcam_with_tripod.jpg)
+[![Rubber Bands](/assets/images/2020/rubber_bands.jpg){:width="25%"}](/assets/images/2020/rubber_bands.jpg)
 <!--more-->
 
 ## The Design
